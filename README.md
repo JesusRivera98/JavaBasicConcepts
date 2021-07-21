@@ -20,7 +20,7 @@ Robust | Java makes an effort to eliminate error prone situations by emphasizing
 #### Applications
 > ___**Write Once, Run Anywhere.**___
 
-|
+|||
 -|-
 Multithreaded | With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
 Interpreted | Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
@@ -31,7 +31,7 @@ Dynamic | Java is considered to be more dynamic than C or C++ since it is design
 ### JVM, JRE, JDK
 ### Basic syntax (Object, class, methods, and instance variables)
 
-|
+|||
 -|-
 Object | Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.
 Class | A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.
