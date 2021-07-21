@@ -45,6 +45,21 @@ It is possible to modify classes, methods, etc., by using modifiers. There are t
 * **Non-access Modifiers** − final, abstract, strictfp
 
 ### Basic datatype
+
+<h4 align="center">Primitive Data Types</h1>
+
+|Type|Size|Min|Max|Use|Default|Example|
+|----|----|---|---|---|-------|-------|
+byte|8-bit signed two's complement integer|-128 (-2^7)|127 (inclusive)(2^7 -1)|Save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.|0|byte a = 100, byte b = -50
+short|16-bit signed two's complement integer|-32,768 (-2^15)|32,767 (inclusive) (2^15 -1)|save memory as byte data type. A short is 2 times smaller than an integer|0|short s = 10000, short r = -20000
+int|32-bit signed two's complement integer|- 2,147,483,648 (-2^31)|2,147,483,647(inclusive) (2^31 -1)|the default data type for integral values unless there is a concern about memory.|0|int a = 100000, int b = -200000
+long|64-bit signed two's complement integer|-9,223,372,036,854,775,808(-2^63)|9,223,372,036,854,775,807 (inclusive)(2^63 -1)|used when a wider range than int is needed|0L|long a = 100000L, long b = -200000L
+|float|a single-precision 32-bit IEEE 754 floating point|||used to save memory in large arrays of floating point numbers -is never used for precise values such as currency|0.0f|float f1 = 234.5f
+double|double-precision 64-bit IEEE 754 floating point|||-used as the default data type for decimal values, generally the default choice -should never be used for precise values such as currency|0.0d|double d1 = 123.4
+boolean|represents one bit of information|Only two possible values: true and false||used for simple flags that track true/false conditions|false|boolean one = true
+char|Single 16-bit Unicode character| '\u0000' (or 0)|'\uffff' (or 65,535 inclusive)|used to store any character||char letterA = 'A'
+
+
 ### Basic operators (Arithmetic operator, relational operator, logical operator, assignment operators, and ternary operators)
 ### Precedence of Java operators
 ### Loop control
