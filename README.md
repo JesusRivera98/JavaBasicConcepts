@@ -42,7 +42,7 @@ Instance Variables | Each object has its unique set of instance variables. An ob
 It is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers:
 
 * **Access Modifiers** − default, public , protected, private
-* **Non-access Modifiers* − final, abstract, strictfp
+* **Non-access Modifiers** − final, abstract, strictfp
 
 ### Basic datatype
 ### Basic operators (Arithmetic operator, relational operator, logical operator, assignment operators, and ternary operators)
