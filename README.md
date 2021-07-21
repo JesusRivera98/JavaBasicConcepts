@@ -39,14 +39,25 @@ Methods | A method is basically a behavior. A class can contain many methods. It
 Instance Variables | Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.
 
 ### Java Modifiers
+Modifiers are keywords that you add to those definitions to change their meanings. 
 It is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers:
 
 * **Access Modifiers** − default, public , protected, private
+  * Visible to the package, the **default**. No modifiers are needed.
+  * Visible to the class only (**private**).
+  * Visible to the world **(public)**.
+  * Visible to the package and all subclasses (**protected**).
 * **Non-access Modifiers** − final, abstract, strictfp
+  * The **static** modifier for creating class methods and variables.
+  * The **final** modifier for finalizing the implementations of classes, methods, and variables.
+  * The **abstract** modifier for creating abstract classes and methods.
+  * The **synchronized** and **volatile** modifiers, which are used for threads.
+
+To use a modifier, you include its keyword in the definition of a class, method, or variable. The modifier precedes the rest of the statement.
 
 ### Basic datatype
 
-<h4 align="center">Primitive Data Types</h1>
+<h4 align="center">Primitive Data Types</h4>
 
 |Type|Size|Min|Max|Use|Default|Example|
 |----|----|---|---|---|-------|-------|
@@ -61,6 +72,63 @@ char|Single 16-bit Unicode character| '\u0000' (or 0)|'\uffff' (or 65,535 inclus
 
 
 ### Basic operators (Arithmetic operator, relational operator, logical operator, assignment operators, and ternary operators)
+
+<h4 align="center">Arithmetic</h4>
+
+|Operator|	Description|	Example|
+|-|-|-|
+|+ (Addition)|	Adds values on either side of the operator.|	A + B will give 30
+|- (Subtraction)|	Subtracts right-hand operand from left-hand operand.	|A - B will give -10
+|* (Multiplication)	|Multiplies values on either side of the operator.	|A * B will give 200
+|/ (Division)	|Divides left-hand operand by right-hand operand.	|B / A will give 2
+|% (Modulus)	|Divides left-hand operand by right-hand operand and returns remainder.	|B % A will give 0
+|++ (Increment)	|Increases the value of operand by 1.	|B++ gives 21
+|-- (Decrement)	|Decreases the value of operand by 1.|	B-- gives 19
+
+<h4 align="center">Relational</h4>
+
+|Operator|	Description	|Example|
+|-|-|-|
+|== (equal to)|	Checks if the values of two operands are equal or not, if yes then condition becomes true.|	(A == B) is not true.
+|!= (not equal to)|	Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.	|(A != B) is true.
+|> (greater than)|	Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.|	(A > B) is not true.
+|< (less than)|	Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.|	(A < B) is true.
+|>= (greater than or equal to)|	Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.|	(A >= B) is not true.
+|<= (less than or equal to)|	Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.|	(A <= B) is true.
+
+<h4 align="center">Logical</h4>
+
+|Operator|Description|Example|
+|-|-|-|
+| && (logical and)	|Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.|	(A && B) is false|
+|\|\| (logical or)|	Called Logical OR Operator. If any of the two operands are non-zero, then the condition becomes true.	|(A || B) is true|
+|! (logical not)|	Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.|	!(A && B) is true|
+
+
+
+<h4 align="center">Assignment</h4>
+
+|Operator	|Description|	Example|
+|-|-|-|
+|=	|Simple assignment operator. Assigns values from right side operands to left side operand.|	C = A + B will assign value of A + B into C
++=	|Add AND assignment operator. It adds right operand to the left operand and assign the result to left operand.|	C += A is equivalent to C = C + A
+-=	|Subtract AND assignment operator. It subtracts right operand from the left operand and assign the result to left operand.|	C -= A is equivalent to C = C – A
+*=	|Multiply AND assignment operator. It multiplies right operand with the left operand and assign the result to left operand.|	C *= A is equivalent to C = C * A
+/=	|Divide AND assignment operator. It divides left operand with the right operand and assign the result to left operand.|	C /= A is equivalent to C = C / A
+%=	|Modulus AND assignment operator. It takes modulus using two operands and assign the result to left operand.|	C %= A is equivalent to C = C % A
+<<=	|Left shift AND assignment operator.|	C <<= 2 is same as C = C << 2
+|>>=|	Right shift AND assignment operator.|	C >>= 2 is same as C = C >> 2
+&=|	Bitwise AND assignment operator.|	C &= 2 is same as C = C & 2
+^=|	bitwise exclusive OR and assignment operator.	|C ^= 2 is same as C = C ^ 2
+\|=	|bitwise inclusive OR and assignment operator.|	C \|= 2 is same as C = C | 2
+
+<h4 align="center">Ternary</h4>
+Conditional operator is also known as the ternary operator. This operator consists of three operands and is used to evaluate Boolean expressions. The goal of the operator is to decide, which value should be assigned to the variable.
+
+```Java
+ variable x = (expression) ? value if true : value if false 
+ ```
+
 ### Precedence of Java operators
 ### Loop control
 ### Decision making
