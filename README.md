@@ -20,7 +20,7 @@ Robust | Java makes an effort to eliminate error prone situations by emphasizing
 #### Applications
 > ___**Write Once, Run Anywhere.**___
 
-|
+|||
 -|-
 Multithreaded | With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.
 Interpreted | Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.
@@ -31,7 +31,7 @@ Dynamic | Java is considered to be more dynamic than C or C++ since it is design
 ### JVM, JRE, JDK
 ### Basic syntax (Object, class, methods, and instance variables)
 
-|
+|||
 -|-
 Object | Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.
 Class | A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.
@@ -39,6 +39,11 @@ Methods | A method is basically a behavior. A class can contain many methods. It
 Instance Variables | Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.
 
 ### Java Modifiers
+It is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers:
+
+* **Access Modifiers** − default, public , protected, private
+* **Non-access Modifiers* − final, abstract, strictfp
+
 ### Basic datatype
 ### Basic operators (Arithmetic operator, relational operator, logical operator, assignment operators, and ternary operators)
 ### Precedence of Java operators
@@ -46,8 +51,20 @@ Instance Variables | Each object has its unique set of instance variables. An ob
 ### Decision making
 ### Java Strings
 ### Java Arrays
+
+> Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap.
+
+
 ### Java Date & time
 ### Java Files and I/O
 ### Java Exceptions
 ### Final, static, 
 ### Enumeration
+
+> Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
+
+> With the use of enums it is possible to reduce the number of bugs in your code.
+
+> For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.
+
+**Note** − Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
