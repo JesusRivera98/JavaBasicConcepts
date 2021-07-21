@@ -167,6 +167,17 @@ ___Operators with the highest precedence appear at the top of the table, those w
 |2|	continue statement|Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
 
 ### Decision making
+
+> Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.
+
+|Sr.No.|	Statement | Description| Syntax
+|-|-|-|-|
+1|	if statement|An if statement consists of a boolean expression followed by one or more statements.|``` if(Boolean_expression) {   // Statements will execute if the Boolean expression is true } ```
+2|	if...else statement|An if statement can be followed by an optional else statement, which executes when the boolean expression is false.|``` if(Boolean_expression) {   // Executes when the Boolean expression is true }else {   // Executes when the Boolean expression is false } ```
+3	|nested if statement|You can use one if or else if statement inside another if or else if statement(s).|``` if(Boolean_expression 1) {   // Executes when the Boolean expression 1 is true   if(Boolean_expression 2) {      // Executes when the Boolean expression 2 is true   } } ```
+4|	switch statement|A switch statement allows a variable to be tested for equality against a list of values.|``` switch(expression) {   case value :      // Statements      break; // optional      case value :      // Statements      break; // optional   // You can have any number of case statements.   default : // Optional      // Statements} ```
+||? : Operator|Can be used to replace if...else statements.|``` Exp1 ? Exp2 : Exp3; ```
+
 ### Java Strings
 ### Java Arrays
 
