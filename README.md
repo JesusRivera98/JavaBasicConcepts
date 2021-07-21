@@ -195,6 +195,12 @@ String greeting = "Hello world!";
 StringBuffer sBuffer = new StringBuffer("test");
 ```
 
+**Concatenating Strings**
+* string1.concat(string2);
+* "My name is ".concat("Zara");
+* "Hello," + " world" + "!"
+
+
 ### Java Arrays
 
 > Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap.
