@@ -130,7 +130,41 @@ Conditional operator is also known as the ternary operator. This operator consis
  ```
 
 ### Precedence of Java operators
+
+> Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.
+
+|Category|	Operator|	Associativity|
+|--------|  --------|   -------------|
+Postfix	|expression++ expression--	|Left to right
+Unary	|++expression –-expression +expression –expression ~ !	|Right to left
+Multiplicative|	* / %	|Left to right
+Additive|	+ -	|Left to right
+Shift	|<< >> >>>	|Left to right
+Relational|	< > <= >= instanceof	|Left to right
+Equality|	== !=	|Left to right
+Bitwise AND|	&	|Left to right
+Bitwise XOR|	^	|Left to right
+Bitwise OR|	\|	|Left to right
+Logical AND|	&&	|Left to right
+Logical OR|	\|\|	|Left to right
+Conditional|	?:|	Right to left
+Assignment|	= += -= *= /= %= ^= \|= <<= >>= >>>=	|Right to left
+
+___Operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.___
+
 ### Loop control
+
+|Sr.No.|	Loop | Description|Syntax|
+|-|-|-|-|
+|1	|while loop|Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.| ``` whileBoolean_expression) {   // Statements} ```
+|2	|for loop|Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.|```for(initialization; Boolean_expression; update) {   // Statements} ```
+|3|	do...while loop|Like a while statement, except that it tests the condition at the end of the loop body.|```do {   // Statements}while(Boolean_expression);```
+
+|Sr.No.	|Control Statement| Description
+|-|-|-|
+|1|	break statement|Terminates the loop or switch statement and transfers execution to the statement immediately following the loop or switch.
+|2|	continue statement|Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+
 ### Decision making
 ### Java Strings
 ### Java Arrays
