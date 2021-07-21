@@ -1,6 +1,9 @@
-public class MyClass {
-   int num;
-   MyClass() {
-      num = 100;
-   }
-}
+// A simple constructor.
+class MyClass {
+    int x;
+    
+    // Following is the constructor
+    MyClass(int i ) {
+       x = i;
+    }
+ }
