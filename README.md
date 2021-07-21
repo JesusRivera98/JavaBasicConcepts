@@ -159,6 +159,7 @@ ___Operators with the highest precedence appear at the top of the table, those w
 |1	|while loop|Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.| ``` whileBoolean_expression) {   // Statements} ```
 |2	|for loop|Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.|```for(initialization; Boolean_expression; update) {   // Statements} ```
 |3|	do...while loop|Like a while statement, except that it tests the condition at the end of the loop body.|```do {   // Statements}while(Boolean_expression);```
+||Enhanced for loop |This is mainly used to traverse collection of elements including arrays. | ``` for(declaration : expression) {   // Statements}```
 
 |Sr.No.	|Control Statement| Description
 |-|-|-|
