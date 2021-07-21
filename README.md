@@ -179,6 +179,22 @@ ___Operators with the highest precedence appear at the top of the table, those w
 ||? : Operator|Can be used to replace if...else statements.|``` Exp1 ? Exp2 : Exp3; ```
 
 ### Java Strings
+
+> Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.
+
+> The Java platform provides the String class to create and manipulate strings
+
+The most direct way to create a string is to write:
+
+```Java
+String greeting = "Hello world!";
+```
+
+> ___**Note** − The String class is immutable, so that once it is created a String object cannot be changed. If there is a necessity to make a lot of modifications to Strings of characters, then you should use String Buffer & String Builder Classes.___
+```Java
+StringBuffer sBuffer = new StringBuffer("test");
+```
+
 ### Java Arrays
 
 > Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap.
