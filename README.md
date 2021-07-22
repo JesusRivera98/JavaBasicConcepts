@@ -483,6 +483,16 @@ try {
 ```
 
 <h4 align="center">try-with-resources</h4>
+try-with-resources, also referred as automatic resource management, is a new exception handling mechanism that was introduced in Java 7, which automatically closes the resources used within the try catch bloc
+
+```Java
+try(FileReader fr = new FileReader("file path")) {
+   // use the resource
+   } catch () {
+      // body of catch 
+   }
+}
+```
 
 
 ### Final, static, 
