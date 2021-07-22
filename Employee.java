@@ -1,14 +1,37 @@
-import java.io.*;
+/* File name : Employee.java */
 public class Employee {
+   private String name;
+   private String address;
+   private int number;
 
-   // salary  variable is a private static variable
-   private static double salary;
+   public Employee(String name, String address, int number) {
+      System.out.println("Constructing an Employee");
+      this.name = name;
+      this.address = address;
+      this.number = number;
+   }
 
-   // DEPARTMENT is a constant
-   public static final String DEPARTMENT = "Development ";
+   public void mailCheck() {
+      System.out.println("Mailing a check to " + this.name + " " + this.address);
+   }
 
-   public static void main(String args[]) {
-      salary = 1000;
-      System.out.println(DEPARTMENT + "average salary:" + salary);
+   public String toString() {
+      return name + " " + address + " " + number;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public String getAddress() {
+      return address;
+   }
+
+   public void setAddress(String newAddress) {
+      address = newAddress;
+   }
+
+   public int getNumber() {
+      return number;
    }
 }
