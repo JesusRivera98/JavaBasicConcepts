@@ -3,19 +3,19 @@ import java.util.regex.Pattern;
 
 public class RegexMatches {
 
-   private static final String REGEX = "\\bcat\\b";
-   private static final String INPUT = "cat cat cat cattie cat";
+   private static final String REGEX = "foo";
+   private static final String INPUT = "fooooooooooooooooo";
+   private static Pattern pattern;
+   private static Matcher matcher;
 
    public static void main( String args[] ) {
-      Pattern p = Pattern.compile(REGEX);
-      Matcher m = p.matcher(INPUT);   // get a matcher object
-      int count = 0;
+      pattern = Pattern.compile(REGEX);
+      matcher = pattern.matcher(INPUT);
 
-      while(m.find()) {
-         count++;
-         System.out.println("Match number "+count);
-         System.out.println("start(): "+m.start());
-         System.out.println("end(): "+m.end());
-      }
+      System.out.println("Current REGEX is: "+REGEX);
+      System.out.println("Current INPUT is: "+INPUT);
+
+      System.out.println("lookingAt(): "+matcher.lookingAt());
+      System.out.println("matches(): "+matcher.matches());
    }
 }
