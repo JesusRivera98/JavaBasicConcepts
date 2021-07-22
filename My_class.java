@@ -1,27 +1,24 @@
-class Outer_Demo {
-   int num;
-   
-   // inner class
-   private class Inner_Demo {
-      public void print() {
-         System.out.println("This is an inner class");
-      }
-   }
-   
-   // Accessing he inner class from the method within
-   void display_Inner() {
-      Inner_Demo inner = new Inner_Demo();
-      inner.print();
-   }
-}
-   
-public class My_class {
-
-   public static void main(String args[]) {
-      // Instantiating the outer class 
-      Outer_Demo outer = new Outer_Demo();
-      
-      // Accessing the display_Inner() method.
-      outer.display_Inner();
-   }
-}
+// interface
+interface Message {
+    String greet();
+ }
+ 
+ public class My_class {
+    // method which accepts the object of interface Message
+    public void displayMessage(Message m) {
+       System.out.println(m.greet() +
+          ", This is an example of anonymous inner class as an argument");  
+    }
+ 
+    public static void main(String args[]) {
+       // Instantiating the class
+       My_class obj = new My_class();
+ 
+       // Passing an anonymous inner class as an argument
+       obj.displayMessage(new Message() {
+          public String greet() {
+             return "Hello";
+          }
+       });
+    }
+ }
