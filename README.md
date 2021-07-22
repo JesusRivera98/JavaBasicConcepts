@@ -513,6 +513,12 @@ In Java, it is possible to define two catergories of Exceptions and Errors.
 * **Programmatic Exceptions:** These exceptions are thrown explicitly by the application or the API programmers. Examples: IllegalArgumentException, IllegalStateException.
 
 ### Final, static, 
+
+* The **static** modifier for creating class methods and variables.
+  * It is used to keep the same value in all instances of a class and allows better control of this.
+* The **final** modifier for finalizing the implementations of classes, methods, and variables.
+  * Makes a variable or method unchangeable once it has been declared.
+
 ### Enumeration
 
 > Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.
