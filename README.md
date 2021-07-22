@@ -340,9 +340,46 @@ Java Byte streams are used to perform input and output of 8-bit bytes, whereas J
 <h4 align="center">Standard Streams</h4>
 All the programming languages provide support for standard I/O where the user's program can take input from a keyboard and then produce an output on the computer screen. If you are aware of C or C++ programming languages, then you must be aware of three standard devices STDIN, STDOUT and STDERR.
 
+
+
 * **Standard Input:** This is used to feed the data to user's program and usually a keyboard is used as standard input stream and represented as System.in.
 * **Standard Output:** This is used to output the data produced by the user's program and usually a computer screen is used for standard output stream and represented as System.out.
 * **Standard Error:** This is used to output the error data produced by the user's program and usually a computer screen is used for standard error stream and represented as System.err.
+
+<h4 align="center">FileInputStream</h4>
+
+```Java
+InputStream f = new FileInputStream("C:/java/hello");
+```
+```Java
+File f = new File("C:/java/hello");
+InputStream f = new FileInputStream(f);
+```
+
+Sr.No.|	Method | Description|
+|-|-|-|
+1	|public void close() throws IOException{}|This method closes the file output stream. Releases any system resources associated with the file. Throws an IOException.
+2	|protected void finalize()throws IOException {}|This method cleans up the connection to the file. Ensures that the close method of this file output stream is called when there are no more references to this stream. Throws an IOException.
+3	|public int read(int r)throws IOException{}|This method reads the specified byte of data from the InputStream. Returns an int. Returns the next byte of data and -1 will be returned if it's the end of the file.
+4	|public int read(byte[] r) throws IOException{}|This method reads r.length bytes from the input stream into an array. Returns the total number of bytes read. If it is the end of the file, -1 will be returned.
+5	|public int available() throws IOException{}|Gives the number of bytes that can be read from this file input stream. Returns an int.
+
+<h4 align="center">FileOutputStream</h4>
+
+```Java
+OutputStream f = new FileOutputStream("C:/java/hello") 
+```
+```Java
+File f = new File("C:/java/hello");
+OutputStream f = new FileOutputStream(f);
+```
+
+Sr.No.|	Method | Description|
+|-|-|-|
+1	|public void close() throws IOException{}|This method closes the file output stream. Releases any system resources associated with the file. Throws an IOException.
+2	|protected void finalize()throws IOException {}|This method cleans up the connection to the file. Ensures that the close method of this file output stream is called when there are no more references to this stream. Throws an IOException.
+3	|public void write(int w)throws IOException{}|This methods writes the specified byte to the output stream.|
+4	|public void write(byte[] w)|Writes w.length bytes from the mentioned byte array to the OutputStream.
 
 ### Java Exceptions
 ### Final, static, 
