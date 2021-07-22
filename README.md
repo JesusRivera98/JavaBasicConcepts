@@ -255,6 +255,33 @@ Sr.No.|	Method | Description||
 
 > Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap.
 
+> Java provides a data structure, the array, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+#### Syntax
+```Java
+dataType[] arrayRefVar;   // preferred way.
+or
+dataType arrayRefVar[];  // works but not preferred way.
+```
+> ___Note − The style dataType[] arrayRefVar is preferred. The style dataType arrayRefVar[] comes from the C/C++ language and was adopted in Java to accommodate C/C++ programmers___
+
+#### Example
+
+```Java
+double[] myList;   // preferred way.
+or
+double myList[];   // works but not preferred way.
+``` 
+#### Creation
+Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below:
+```Java
+dataType[] arrayRefVar = new dataType[arraySize];
+```
+Alternatively you can create arrays as follows:
+```Java
+dataType[] arrayRefVar = {value0, value1, ..., valuek};
+```
+The array elements are accessed through the index. Array indices are 0-based; that is, they start from 0 to arrayRefVar.length-1.
 
 ### Java Date & time
 ### Java Files and I/O
