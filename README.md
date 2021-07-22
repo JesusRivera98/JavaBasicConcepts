@@ -381,6 +381,15 @@ Sr.No.|	Method | Description|
 3	|public void write(int w)throws IOException{}|This methods writes the specified byte to the output stream.|
 4	|public void write(byte[] w)|Writes w.length bytes from the mentioned byte array to the OutputStream.
 
+File Navigation and I/O
+* File Class
+* FileReader Class
+* FileWriter Class
+--
+* **mkdir( ):** Creates a directory, returning true on success and false on failure. Failure indicates that the path specified in the File object already exists, or that the directory cannot be created because the entire path does not exist yet.
+* **mkdirs():** Creates both a directory and all the parents of the directory.
+
+
 ### Java Exceptions
 ### Final, static, 
 ### Enumeration
