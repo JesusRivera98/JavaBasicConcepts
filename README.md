@@ -494,6 +494,23 @@ try(FileReader fr = new FileReader("file path")) {
 }
 ```
 
+<h4 align="center">User-defined Exceptions</h4>
+You can create your own exceptions in Java. Keep the following points in mind when writing your own exception classes:
+
+* All exceptions must be a child of Throwable.
+* If you want to write a checked exception that is automatically enforced by the Handle or Declare Rule, you need to extend the Exception class.
+* If you want to write a runtime exception, you need to extend the RuntimeException class.
+
+```Java
+class MyException extends Exception {
+}
+```
+
+<h4 align="center">Common Exceptions</h4>
+In Java, it is possible to define two catergories of Exceptions and Errors.
+
+* **JVM Exceptions:** These are exceptions/errors that are exclusively or logically thrown by the JVM. Examples: NullPointerException, ArrayIndexOutOfBoundsException, ClassCastException.
+* **Programmatic Exceptions:** These exceptions are thrown explicitly by the application or the API programmers. Examples: IllegalArgumentException, IllegalStateException.
 
 ### Final, static, 
 ### Enumeration
