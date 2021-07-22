@@ -391,6 +391,98 @@ File Navigation and I/O
 
 
 ### Java Exceptions
+
+>An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
+
+An exception can occur for many different reasons. Following are some scenarios where an exception occurs.
+* A user has entered an invalid data.
+* A file that needs to be opened cannot be found.
+* A network connection has been lost in the middle of communications or the JVM has run out of memory.
+
+|-|-|
+|-|-|
+Checked exceptions | A checked exception is an exception that is checked (notified) by the compiler at compilation-time, these are also called as compile time exceptions. These exceptions cannot simply be ignored, the programmer should take care of (handle) these exceptions.
+Unchecked exceptions | An unchecked exception is an exception that occurs at the time of execution. These are also called as **Runtime Exceptions**. These include programming bugs, such as logic errors or improper use of an API. Runtime exceptions are ignored at the time of compilation.
+Errors | These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation.
+
+<h4 align="center">Methods</h4>
+
+Sr.No.|	Method | Description
+|-|-|-|
+1	|public String getMessage()|Returns a detailed message about the exception that has occurred. This message is initialized in the Throwable constructor.
+2	|public Throwable getCause()Returns the cause of the exception as represented by a Throwable object.
+3	|public String toString()|Returns the name of the class concatenated with the result of getMessage().
+4	|public void printStackTrace()|Prints the result of toString() along with the stack trace to System.err, the error output stream.
+5	|public StackTraceElement [] getStackTrace()|Returns an array containing each element on the stack trace. The element at index 0 represents the top of the call stack, and the last element in the array represents the method at the bottom of the call stack.
+6	|public Throwable fillInStackTrace()|Fills the stack trace of this Throwable object with the current stack trace, adding to any previous information in the stack trace.
+
+<h4 align="center">Catch Esceptions</h4>
+A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+
+```Java
+try {
+   // Protected code
+} catch (ExceptionName e1) {
+   // Catch block
+}
+```
+
+```Java
+try {
+   // Protected code
+} catch (ExceptionType1 e1) {
+   // Catch block
+} catch (ExceptionType2 e2) {
+   // Catch block
+} catch (ExceptionType3 e3) {
+   // Catch block
+}
+```
+
+<h4 align="center">Throws/Throw</h4>
+If a method does not handle a checked exception, the method must declare it using the throws keyword. The throws keyword appears at the end of a method's signature.
+
+```Java
+import java.io.*;
+public class className {
+
+   public void deposit(double amount) throws RemoteException {
+      // Method implementation
+      throw new RemoteException();
+   }
+   // Remainder of class definition
+}
+```
+```Java
+import java.io.*;
+public class className {
+
+   public void withdraw(double amount) throws RemoteException, 
+      InsufficientFundsException {
+      // Method implementation
+   }
+   // Remainder of class definition
+}
+```
+
+<h4 align="center">Finally</h4>
+The finally block follows a try block or a catch block. A finally block of code always executes, irrespective of occurrence of an Exception.
+
+```Java
+try {
+   // Protected code
+} catch (ExceptionType1 e1) {
+   // Catch block
+} catch (ExceptionType2 e2) {
+   // Catch block
+} catch (ExceptionType3 e3) {
+   // Catch block
+}finally {
+   // The finally block always executes.
+}
+```
+
+
 ### Final, static, 
 ### Enumeration
 
