@@ -283,7 +283,44 @@ dataType[] arrayRefVar = {value0, value1, ..., valuek};
 ```
 The array elements are accessed through the index. Array indices are 0-based; that is, they start from 0 to arrayRefVar.length-1.
 
+* You can pass an array to a method
+* YOu can return an array from a method
+
+<h4 align="center">Arrays Methods</h4>
+
+Sr.No.|	Method | Description||
+|-|-|-|-|
+1	|public static int binarySearch(Object[] a, Object key)|Searches the specified array of Object ( Byte, Int , double, etc.) for the specified value using the binary search algorithm. The array must be sorted prior to making this call. This returns index of the search key, if it is contained in the list; otherwise, it returns ( – (insertion point + 1)).
+2	|public static boolean equals(long[] a, long[] a2)|Returns true if the two specified arrays of longs are equal to one another. Two arrays are considered equal if both arrays contain the same number of elements, and all corresponding pairs of elements in the two arrays are equal. This returns true if the two arrays are equal. Same method could be used by all other primitive data types (Byte, short, Int, etc.)
+3	|public static void fill(int[] a, int val)|Assigns the specified int value to each element of the specified array of ints. The same method could be used by all other primitive data types (Byte, short, Int, etc.)
+4	|public static void sort(Object[] a)|Sorts the specified array of objects into an ascending order, according to the natural ordering of its elements. The same method could be used by all other primitive data types ( Byte, short, Int, etc.)
+
 ### Java Date & time
+
+Java provides the Date class available in java.util package, this class encapsulates the current date and time.
+
+<h4 align="center">Date constructors</h4>
+
+Sr.No.|	Constructor| Description|
+|-|-|-|
+1	|Date( )|This constructor initializes the object with the current date and time.
+2	|Date(long millisec)|This constructor accepts an argument that equals the number of milliseconds that have elapsed since midnight, January 1, 1970.
+
+<h4 align="center">Date Methods</h4>
+
+Sr.No.|	Method | Description
+|-|-|-|
+1	|boolean after(Date date)|Returns true if the invoking Date object contains a date that is later than the one specified by date, otherwise, it returns false.
+2	|boolean before(Date date)|Returns true if the invoking Date object contains a date that is earlier than the one specified by date, otherwise, it returns false.
+3	|Object clone( )|Duplicates the invoking Date object.|
+4	|int compareTo(Date date)|Compares the value of the invoking object with that of date. Returns 0 if the values are equal. Returns a negative value if the invoking object is earlier than date. Returns a positive value if the invoking object is later than date.
+5	|int compareTo(Object obj)|Operates identically to compareTo(Date) if obj is of class Date. Otherwise, it throws a ClassCastException.|
+6	|boolean equals(Object date)|Returns true if the invoking Date object contains the same time and date as the one specified by date, otherwise, it returns false.|
+7	|long getTime( )|Returns the number of milliseconds that have elapsed since January 1, 1970.|
+8	|int hashCode( )|Returns a hash code for the invoking object.|
+9	|void setTime(long time)|Sets the time and date as specified by time, which represents an elapsed time in milliseconds from midnight, January 1, 1970.
+10	|String toString( )|Converts the invoking Date object into a string and returns the result.|
+
 ### Java Files and I/O
 ### Java Exceptions
 ### Final, static, 
